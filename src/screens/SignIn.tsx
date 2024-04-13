@@ -1,5 +1,5 @@
 import { Button } from '../components/Button'
-import { Icon } from '../components/Icon'
+import { PasswordInput } from '../components/PasswordInput'
 import { Screen } from '../components/Screen'
 import { TextInput } from '../components/TextInput'
 
@@ -15,10 +15,12 @@ export function SignInScreen() {
 
       <TextInput
         boxProps={{ marginBottom: 's20' }}
+        secureTextEntry
         label="Senha"
         placeholder="Digite sua senha"
-        RightComponent={<Icon color="gray2" name="eyeOn" />}
       />
+
+      <PasswordInput label="Nova senha" placeholder="Digite sua nova senha" />
 
       <Button marginTop="s48" title="Entrar" />
       <Button preset="outline" marginTop="s12" title="Criar uma conta" />
